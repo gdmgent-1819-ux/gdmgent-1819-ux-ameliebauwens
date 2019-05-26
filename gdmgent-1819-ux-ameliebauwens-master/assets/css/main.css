@@ -1,0 +1,313 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('variables.css');
+@import url('base.css');
+
+@import url('components/flex-grid.css');
+@import url('components/buttons.css');
+@import url('components/forms.css');
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI'; 
+    background-color: #CEE3DF; 
+}
+
+
+main{
+    margin: 0 auto; 
+}
+
+/* HEADER */ 
+
+.logo {
+    height: 80px;
+    margin-top: 100px;
+}
+
+header {
+    background-image: url(../img/background.PNG); 
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    font-weight: 300;
+}
+
+.navigation{
+    display: flex; 
+    padding-top: 100px; 
+    padding-left: 80px;
+      
+}
+.navigation a{
+    padding-left: 30px; 
+    text-decoration: none; 
+    color: white; 
+    font-size: 35px; 
+}
+
+nav a:hover {
+    border-bottom: solid 4px #4AAE9A; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+
+/*
+nav .booknow:hover {
+    background-color: ; 
+}
+*/ 
+
+.welcome {
+    font-size: 40px; 
+    font-weight: 700;  
+    color: #D9BA70; 
+    padding-left: 350px;  
+    padding-top: 600px; 
+}
+
+.fas {
+    color: white; 
+    padding-left: 325px; 
+}
+
+.welcome p {
+    padding-bottom: 30px; 
+}
+
+.booknow p {
+    background-color: white;
+    color: #4AAE9A;
+    padding: 10px; 
+    border-radius: 30px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+}
+
+
+/*MAIN */ 
+
+.maincard{
+    background-color: white; 
+    margin: 30px; 
+    height: 700px;
+    margin-top: 50px; 
+}
+
+
+.title h1{
+    font-size: 40px; 
+    font-weight: lighter; 
+    text-align: center; 
+    padding-top: 20px; 
+}
+
+.line {
+    display: block;
+    margin: auto; 
+    box-align: center; 
+    width: 70%; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+}
+
+
+/*
+.maincard + .maincard::before {
+    content: "";
+    display: block;
+    width: 80%; 
+    background-color: #D9BA70;
+    height: 3px;
+    padding-bottom: 10px; 
+
+}
+*/
+
+/*photos*/ 
+
+#cardphotos { 
+    display: flex; 
+    flex-direction: row; 
+
+}
+
+#titlephotos h1{
+    padding-top: 250px; 
+    padding-left: 50px
+}
+.imagebig {
+    height: 500px ;
+}
+
+.imagesmall img{
+    height: 100.5px; 
+}
+
+.imgphotos {
+    padding-left: 300px; 
+    padding-bottom: 40px; 
+    padding-top: 50px; 
+}
+
+
+
+/*accomodation*/
+
+.accomodationscards{
+    display: flex; 
+    flex-direction: row; 
+}
+
+.accomodationscards h2{
+    color: #4AAE9A; 
+    font-size: 20px; 
+    font-weight: lighter; 
+ 
+}
+
+.accomodationscards img{
+    height: 400px; 
+    width: 400px; 
+    padding-left: 40px; 
+}
+
+h2 {
+    text-align: center
+}
+
+
+.booknowbtn {
+    padding-top: 40px; 
+    padding-left: 550px; 
+    padding-right: 550px; 
+}
+
+.booknowbtn h3 {
+    background-color: #D9BA70; 
+    color: white; 
+    text-align: center; 
+    font-size: 30px; 
+    border-radius: 30px; 
+    padding: 5px; 
+    
+}
+
+/*facilities*/
+
+.imgfacilities img{
+    height: 400px;  
+}
+
+.facilities{
+    display: flex; 
+    padding-left: 100px; 
+    padding-top: 50px
+}
+
+.textfacilities{
+    font-size: 25px; 
+    font-weight: 400;
+    padding-top: 100px; 
+    padding-left: 50px; 
+    line-height: 30px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    
+}
+
+/*eco hotel*/ 
+
+.texteco {
+    text-align: center; 
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.ecothingswedo{
+    color: #4AAE9A; 
+    font-weight: bold; 
+    font-size: 20px; 
+    text-align: center; 
+    letter-spacing: 2px;
+    padding-top: 50px; 
+}
+
+.texttheecothings{
+    display: flex; 
+    padding-left: 400px; 
+    padding-top: 70px; 
+
+}
+
+.theecothings{
+    font-size: 20px; 
+    font-weight: 400; 
+    line-height: 30px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding-right: 50px; 
+}
+
+
+
+
+
+/* FOOTER*/ 
+
+.footer{
+    display: flex; 
+    padding-left: 370px; 
+
+}
+
+.textfooter{
+    color: #CAA346; 
+    font-size: 35px; 
+    letter-spacing: 2px;
+
+}
+
+.partfooter{
+    padding-right: 50px; 
+}
+
+/* icons*/ 
+
+.iconcontact .fas {
+    font-size: 40px; 
+    color: #4AAE9A; 
+    padding-left: 25px; 
+    padding-bottom: 20px; 
+    padding-top: 10px;
+}
+
+.iconfollow .fab {
+    font-size: 40px; 
+    color: #4AAE9A; 
+    padding-left: 25px; 
+    padding-bottom: 20px; 
+    padding-top: 10px;
+}
+
+.iconlocation .fas {
+    font-size: 40px; 
+    color: #4AAE9A; 
+    padding-left: 25px; 
+    padding-bottom: 20px; 
+    padding-top: 10px;
+}
